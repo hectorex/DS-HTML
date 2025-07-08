@@ -1,44 +1,149 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<title>Cadastro de Cliente</title>
-<link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
-</head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente - DS HTML</title>
+    <link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
 
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #004080;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #004080;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 130px);
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #004080;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #002f5f;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
 <body>
 
-<h1> Informações Pessoais</h1>
+<header>
+    <h1>Cadastro de Cliente</h1>
+</header>
 
+<nav>
+    <a href="../pagina_inicial/index.html">Home</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="../curriculo/curriculo.html">Currículo</a>
+    <a href="../cursos/cursos.html">Cursos</a>
+    <a href="../desaparecidos/desaparecidos.html">Desaparecidos</a>
+</nav>
 
-<form method="post" id="contato">
+<main>
+    <form method="post" id="contato">
+        <fieldset id="ident_dono"> 
+            <legend>Cadastro do Cliente</legend>
 
-<fieldset id="ident_dono"> 
-<legend> Cadastro do Cliente </legend>
+            <p><label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlength="100" placeholder="Digite o nome do cliente"></p>
 
-<p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" size = "50" maxlength="100" placeholder="Digite o nome do cliente"/></p>
+            <p><label for="idade">Idade:</label><input type="text" name="idade" id="idade" maxlength="4" placeholder="Digite a idade"></p>
 
-<p><label for="idade">Idade:</label> <input type="text" name="idade" id="idade" size = "10" maxlength="4" placeholder="Digite a idade"/></p>
+            <p><label for="endereco">Endereço:</label><input type="text" name="endereco" id="endereco" maxlength="100" placeholder="Digite o endereço"></p>
 
-<p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size = "80" maxlength="100" placeholder="Digite o endereço"/></p>
+            <p><label for="cid">Cidade:</label><input type="text" name="cid" id="cid" maxlength="100" placeholder="Digite a cidade"></p>
 
-<p><label for="cid">Cidade:</label> <input type="text" name="cid" id="cid" size = "50" maxlength="100" placeholder="Digite a cidade"/></p>
+            <p><label for="estado">Estado:</label><input type="text" name="estado" id="estado" maxlength="2" placeholder="UF"></p>
 
-<p><label for="estado">Estado:</label> <input type="text" name="estado" id="estado" size = "2" maxlength="20" placeholder="UF"/></p>
+            <p><label for="cep">CEP:</label><input type="text" name="cep" id="cep" maxlength="9" placeholder="XXXXX-XXX"></p>
 
-<p><label for="cep">CEP:</label> <input type="text" name="cep" id="cep"  size = "10" maxlength="9" placeholder="XXXXX-XXX"/></p>
+            <p><label for="tel_res">Tel/Res:</label><input type="text" name="tel_res" id="tel_res" maxlength="13" placeholder="99 99999-9999"></p>
 
-<p><label for="tel_res">Tel/Res:</label> <input type="text" name="tel_res" id="tel_res" size = "12" maxlength="13" placeholder="99 99999-9999"/></p>
+            <p><label for="tel_cel">Tel/Cel:</label><input type="text" name="tel_cel" id="tel_cel" maxlength="13" placeholder="99 99999-9999"></p>
 
-<p><label for="tel_cel">Tel/Cel:</label> <input type="text" name="tel_cel" id="tel_cel" size = "12" maxlength="13" placeholder="99 99999-9999"/></p>
+            <p><label for="email_dono">Email:</label><input type="email" name="email_dono" id="email_dono" maxlength="60" placeholder="Digite o endereço de email"></p> 
+        </fieldset> 
 
-<p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono" size = "80" maxlength="60" placeholder="Digite o endereço de email"> </p> 
+        <input type="submit" value="Enviar">
+    </form>
+</main>
 
-</fieldset> 
-
-<input type="submit" value="Enviar">
-
-</form>
+<footer>
+    <p>&copy; 2025 Cadastro de Cliente - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>

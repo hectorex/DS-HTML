@@ -1,26 +1,111 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-<meta charset="utf-8">
-<title>Mural de Cães</title>
-<link rel="shortcut icon" href="../imagens/lost.png">
-</head>
+    <meta charset="UTF-8">
+    <title>Mural de Cães - DS HTML</title>
+    <link rel="shortcut icon" href="../imagens/lost.png">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
 
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .animal {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            border: 2px solid #004080;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .animal img {
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
 <body>
 
-<h1><center>Mural</center> </h1>
-<h2><center>Cães desaparecidos aqui</center></h2>
+<header>
+    <h1>Mural de Cães Desaparecidos</h1>
+</header>
 
-<h2>BEAGLE, desapareceu de casa a 2 dias, Por favor ajudem. Ele precisa de medicamentos contínuos ele é Cardíaco. Desapareceu prox. Metrô Paulista. Atende pelo nome de Toby.... Entrar em contato com 7777-7777 - Rose </h2>
-<img src="../imagens/Beagle.JPG"> 
+<nav>
+    <a href="../pagina_inicial/index.html">Home</a>
+    <a href="../cadastro/cadastro.html">Cadastro</a>
+    <a href="../curriculo/curriculo.html">Currículo</a>
+    <a href="../cursos/cursos.html">Cursos</a>
+    <a href="desaparecidos.html">Desaparecidos</a>
+</nav>
 
-<h2> BULL- Cachorro encontrado na Lapa - SP, muito dócil, estava muito assustado. Contato com Fábio - 8888-9999 </h2>
-<img src="../imagens/bullterrier.JPG"> 
+<main>
+    <section class="animal">
+        <center><h2>Beagle</h2></center>
+        <p>Desapareceu de casa há 2 dias. Por favor, ajudem! Ele precisa de medicamentos contínuos, pois é cardíaco. Desapareceu próximo ao Metrô Paulista. Atende pelo nome de <strong>Toby</strong>.</p>
+        <img src="../imagens/Beagle.JPG" alt="Beagle desaparecido">
+        <p><center>Contato com Rose - <strong>7777-7777</strong>.</center></p>
+    </section>
 
-<h2> COLLIE- Perdi um cão dia 28 na rua Julia Rica as 17:00h, ele esta na minha família ha 4 onze anos. Obrigado ! Contato com Luis - 7788-9999 </h2><img src="Collie.JPG"> 
-<img src="../imagens/Collie.jpg"> 
-<H1>Atendimento: atendimento@desaparecidos.com - (0XX) 99999-9999 / (0XX) 88888-8888</H1>
+    <section class="animal">
+        <center><h2>Bull Terrier</h2></center>
+        <p>Cachorro encontrado na Lapa - SP. Muito dócil, estava assustado. </p>
+        <img src="../imagens/bullterrier.JPG" alt="Bull Terrier encontrado">
+        <p><center>Contato com Fábio - <strong>8888-9999</strong>.</center></p>
+    </section>
+
+    <section class="animal">
+        <center><h2>Collie</h2></center>
+        <p>Perdi um cão dia 28 na Rua Júlia Rica às 17h. Ele está com minha família há 11 anos. </p>
+        <img src="../imagens/Collie.jpg" alt="Collie desaparecido">
+        <p><center>Contato com Luis - <strong>7788-9999</strong>.</center></p>
+    </section>
+
+    <h3 style="text-align: center; margin-top: 50px;">
+        Atendimento: <a href="mailto:atendimento@desaparecidos.com">atendimento@desaparecidos.com</a><br>
+        Telefones: (0XX) 99999-9999 / (0XX) 88888-8888
+    </h3>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mural de Cães Desaparecidos - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>

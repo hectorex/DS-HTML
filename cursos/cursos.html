@@ -1,104 +1,150 @@
-﻿<!doctype html>
-
+﻿<!DOCTYPE html>
 <html lang="pt-br">
-
-
 <head>
+    <meta charset="UTF-8">
+    <title>Cursos - DS HTML</title>
+    <link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
+    <link rel="stylesheet" href="../estilo.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
 
-<meta charset="utf-8">
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
-<title>Grade Cursos Senac</title>
-<link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
 
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 90%;
+            background-color: white;
+        }
+
+        th, td {
+            border: 2px solid #004080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #cce0ff;
+        }
+    </style>
 </head>
-
-
 <body>
 
-<h1><center>Cursos IFRO - Informática para Escritório</center></h1>
+<header>
+    <h1>Cursos IFRO - Informática para Escritório</h1>
+</header>
 
-<table Border = 2>
-   <tr>
-   
-	<td><b>Cursos</b> ***********</td>
-	<td><b>Carga Horária </b> ****</td>
-	<td><b>Idade mínima</b>*****</td>
-	<td><b>Escolaridade </b>*****</td>
-	<td><b>Início </b>***********</td>
-	<td><b>Valor </b>************</td>
-	
-   
-  </tr>
+<nav>
+    <a href="../pagina_inicial/index.html">Home</a>
+    <a href="../cadastro/cadastro.html">Cadastro</a>
+    <a href="../curriculo/curriculo.html">Currículo</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="../desaparecidos/desaparecidos.html">Desaparecidos</a>
+</nav>
 
-  <tr>
-	<td>Excel Básico</td>
-	<td>24 horas</td>
-	<td>14 anos</td>
-	<td>6° ano do ensino fundamental</td>
-	<td>Fevereiro, Março e Abril</td>
-	<td>390,00</td>
-	
-  </tr>
-  <tr>
-	<td>Excel Avançado</td>
-	<td>39 horas</td>
-	<td>16 anos</td>
-	<td>Cursando o ensino médio</td>
-	<td>Fevereiro, Março e Abril</td>
-	<td>723,00</td>
-	
-  </tr>
-  <tr>
-	<td>Informática para Maturidade</td>
-	<td>36 horas</td>
-	<td>Acima de 40 anos</td>
-	<td>6° ano do ensino fundamental</td>
-	<td>Fevereiro e Maio</td>
-	<td>622,00</td>
-	
-  </tr>
+<main>
+    <center><h2>Grade de Cursos</h2></center>
+    <table>
+        <tr>
+            <th>Cursos</th>
+            <th>Carga Horária</th>
+            <th>Idade mínima</th>
+            <th>Escolaridade</th>
+            <th>Início</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>Excel Básico</td>
+            <td>24 horas</td>
+            <td>14 anos</td>
+            <td>6° ano do ensino fundamental</td>
+            <td>Fevereiro, Março e Abril</td>
+            <td>R$ 390,00</td>
+        </tr>
+        <tr>
+            <td>Excel Avançado</td>
+            <td>39 horas</td>
+            <td>16 anos</td>
+            <td>Cursando o ensino médio</td>
+            <td>Fevereiro, Março e Abril</td>
+            <td>R$ 723,00</td>
+        </tr>
+        <tr>
+            <td>Informática para Maturidade</td>
+            <td>36 horas</td>
+            <td>Acima de 40 anos</td>
+            <td>6° ano do ensino fundamental</td>
+            <td>Fevereiro e Maio</td>
+            <td>R$ 622,00</td>
+        </tr>
+        <tr>
+            <td>Operador de Computador</td>
+            <td>160 horas</td>
+            <td>16 anos</td>
+            <td>Ensino fundamental 2 incompleto</td>
+            <td>Março e Outubro</td>
+            <td>R$ 1.757,00</td>
+        </tr>
+        <tr>
+            <td>PowerPoint</td>
+            <td>20 horas</td>
+            <td>14 anos</td>
+            <td>Ensino fundamental 2 incompleto</td>
+            <td>Março e Junho</td>
+            <td>R$ 216,00</td>
+        </tr>
+        <tr>
+            <td>Project</td>
+            <td>20 horas</td>
+            <td>16 anos</td>
+            <td>Ensino fundamental completo</td>
+            <td>Fevereiro e Abril</td>
+            <td>R$ 570,00</td>
+        </tr>
+        <tr>
+            <td>Word</td>
+            <td>24 horas</td>
+            <td>14 anos</td>
+            <td>Ensino fundamental 2 incompleto</td>
+            <td>Março e Junho</td>
+            <td>R$ 250,00</td>
+        </tr>
+    </table>
+</main>
 
-  <tr>
-	<td>Operador de Computador</td>
-	<td>160 horas</td>
-	<td>16 anos</td>
-	<td>ensino fundamental 2 incompleto</td>
-	<td>Março e Outubro</td>
-	<td>1757,00</td>
-	
-  </tr>
-
-  <tr>
-	<td>PowerPoint</td>
-	<td>20 horas</td>
-	<td>14 anos</td>
-	<td>ensino fundamental 2 incompleto</td>
-	<td>Março e junho </td>
-	<td>216,00</td>
-	
-  </tr>
-  <tr>
-	<td>Project</td>
-	<td>20 horas</td>
-	<td>16 anos</td>
-	<td>Ensino fundamental completo</td>
-	<td>Fevereiro e Abril</td>
-	<td>570,00</td>
-	
-  </tr>
-  <tr>
-	<td>Word</td>
-	<td>24 horas</td>
-	<td>14 anos</td>
-	<td>ensino fundamental 2 incompleto</td>
-	<td>Março e Junho</td>
-	<td>250,00</td>
-	
-  </tr>
-</table>
-
+<footer>
+    <p>&copy; 2025 Cursos IFRO - Todos os direitos reservados</p>
+</footer>
 
 </body>
-
 </html>

@@ -1,35 +1,100 @@
-﻿<!doctype html>
-
+﻿<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
+    <link rel="stylesheet" href="../estilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
 
-<meta charset="utf-8">
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
-<title>Site</title>
-<link rel="shortcut icon" href="../imagens/huntshowdownIcon.png">
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
 
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .botao-link {
+        display: inline-block;
+        margin: 15px;
+        padding: 15px 25px;
+        width: 300px; 
+        font-size: 20px;
+        background-color: #004080;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        border: none;
+        transition: background-color 0.3s;
+        text-align: center;
+                }
+
+        .botao-link:hover {
+            background-color: #002f5f;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
 </head>
-
-
 <body>
 
-<h1><center>Menus</center></h1>
+<header>
+    <h1>Bem-vindo ao Site HTML de Desenvolvimento de Sistemas </h1>
+</header>
 
-<ul>
-<li><a target="_blank" href="../curriculo/curriculo.html"> Clique aqui</a> para ver meu Currículo.</li>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="../cadastro/cadastro.html">Cadastro</a>
+    <a href="../curriculo/curriculo.html">Currículo</a>
+    <a href="../cursos/cursos.html">Cursos</a>
+    <a href="../desaparecidos/desaparecidos.html">Desaparecidos</a>
+</nav>
 
-<li><a target="_blank" href="../desaparecidos/desaparecidos.html">Clique aqui</a> para ver o Mural de Cães desaparecidos.</li>
+<main>
+    <h2>MENU</h2>
+    <a class="botao-link" href="../cadastro/cadastro.html">Cadastro</a>
+    <br>
+    <a class="botao-link" href="../curriculo/curriculo.html">Currículo</a>
+    <br>
+    <a class="botao-link" href="../cursos/cursos.html">Grade de Cursos Senac</a>
+    <br>
+    <a class="botao-link" href="../desaparecidos/desaparecidos.html">Mural de Cães Desaparecidos</a>
 
-<li><a target="_blank" href="../cursos/cursos.html">Clique aqui</a> para ver a Grade de Cursos do Senac.</li>
+    
+</main>
 
-<li><a target="_blank" href="../cadastro/cadastro.html">Clique aqui</a> para ir para tela de Cadastro.</li>
-</ul>
-
+<footer>
+    <p>&copy; 2025 DS HTML - Todos os direitos reservados</p>
+</footer>
 
 </body>
-
-
 </html>
-
-
